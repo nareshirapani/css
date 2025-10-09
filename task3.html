@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        background-color: antiquewhite;
+        width: 100%;
+    }
+    .child{
+        display: inline-block;
+        position:relative;
+        padding-left: 50px;
+        left: 200px;
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+    }
+    .child:hover .dropdown{
+        display: block;
+        transition:all 3s steps(3) 3s;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h2>couses</h2>
+            <div class="dropdown">
+                <p>cloud</p>
+                <p>programming languages</p>
+                <p>all course</p>
+            </div>
+        </div>
+        <div class="child">
+            <h2>Tutorials</h2>
+            <div class="dropdown">
+                <p>Aws</p>
+                <p>python</p>
+                <p>datascience</p>
+            </div>
+        </div>
+        <div class="child">
+            <h2>practice</h2>
+            <div class="dropdown">
+                <p>problems</p>
+                <p>problem of the day</p>
+                <p>free coure</p>
+            </div>
+        </div>
+        <div class="child">
+            <h2>jobs</h2>
+            <div class="dropdown">
+                <p>apply jobs</p>
+                <p>post jobs</p>
+                <p>job updates</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
