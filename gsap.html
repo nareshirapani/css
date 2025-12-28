@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display:flex;
+        background-color:aqua;
+        justify-content: space-between;
+        padding-right: 30px;
+       
+    }
+    .submain{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: coral;
+        height: 100vh;
+    }
+    .section1>h1{
+        transform: scale(1);
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:burlywood;
+        height: 100vh;
+    }
+    .section3{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: cadetblue;
+        height: 100vh;
+    }
+    .section3>img{
+        height: 40vh;
+        width:40%;
+    }
+    .section3>p{
+        height: 20vh;
+        width:40%;
+        background-color: orange;
+    }
+    
+</style>
+<body>
+    <nav class="main">
+        <h1>BEACH</h1>
+        <div class="submain">
+            <P>Home</P>
+            <P>About</P>
+            <P>Contact</P>
+        </div>
+    </nav>
+    <div class="section1">
+        <h1>Hello animations!!!</h1>
+    </div>
+    <div class="section2">
+        <h1>GSAP Animations</h1>
+    </div>
+    <div class="section3">
+        <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" alt="" height="300px" width="300px">
+        <p>As the sun dips below the horizon, the sky explodes in a breathtaking display of color, with streaks of gold, orange, and red. The rhythmic sound of waves crashing on the shore provides a soothing soundtrack, creating a peaceful and tranquil atmosphere. The gentle breeze carries the salty scent of the sea, and the last rays of sunlight glint off the water, casting a shimmering, golden path across the ocean. It's a moment of serene reflection, a beautiful reminder of nature's power and a perfect, calming end to the day. </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./gsap1.js"></script>
+</body>
+</html>

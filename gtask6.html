@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(4,300px);
+        grid-template-rows: repeat(5,100px);
+        gap:20px 10px;
+    }
+    .child1{
+        background-color:red ;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .child2{
+        background-color: darksalmon ;
+    }
+    .child3{
+        background-color:orange;
+    }
+    .child4{
+        background-color:green;
+    }
+    .child5{
+        background-color:lightseagreen ;
+    }
+    .child6{
+        background-color:lightgreen;
+    }
+    .child7{
+        background-color:darksalmon;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .child8{
+        background-color: red ;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .child9{
+        background-color:green;
+    }
+    .child10{
+        background-color:orange;
+    }
+    .child11{
+        background-color:green;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .child12{
+        background-color:lightseagreen ;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+@media screen and (min-width:320px) and (max-width:426px){
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(12,300px);
+        gap: 10px;
+    }
+    .child1{
+        background-color:red;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .child2{
+        background-color: darksalmon ;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        
+    }
+    .child3{
+        background-color:orange;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        
+    }
+    .child4{
+        background-color:green;
+        grid-row: 4/5;
+        grid-column: 1/2;
+        
+    }
+    .child5{
+        background-color:lightseagreen ;
+        grid-row: 5/6;
+        grid-column: 1/2;
+        
+    }
+    .child6{
+        background-color:lightgreen;
+        grid-row: 6/7;
+        grid-column: 1/2;
+        
+    }
+    .child7{
+        background-color:darksalmon;
+        grid-row: 7/8;
+        grid-column: 1/2;
+       
+    }
+    .child8{
+        background-color:red ;
+        grid-row: 8/9;
+        grid-column: 1/2;
+       
+    }
+    .child9{
+        background-color:green;
+        grid-row: 9/10;
+        grid-column: 1/2;
+        
+    }
+    .child10{
+        background-color:orange;
+        grid-row: 10/11;
+        grid-column: 1/2;
+        
+    }
+    .child11{
+        background-color:blue;
+        grid-row: 11/12;
+        grid-column: 1/2;
+       
+    }
+    .child12{
+        background-color:lightgreen;
+        grid-row: 12/13;
+        grid-column: 1/2;
+       
+    }
+}
+@media screen and (min-width:425px) and (max-width:769px){
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(6,300px);
+        gap: 10px;
+    }
+    .child1{
+        background-color:red;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .child2{
+        background-color: darksalmon ;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        height: 300px;
+    }
+    .child3{
+        background-color:orange;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        height: 300px;
+    }
+    .child4{
+        background-color:green;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        height: 300px;
+    }
+    .child5{
+        background-color:lightseagreen ;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        height: 300px;
+    }
+    .child6{
+        background-color:lightgreen;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        height: 300px;
+    }
+    .child7{
+        background-color:darksalmon;
+        grid-row: 4/5;
+        grid-column: 1/2;
+        height: 300px;
+    }
+    .child8{
+        background-color:red ;
+        grid-row: 4/5;
+        grid-column: 2/3;
+        height: 300px;
+    }
+    .child9{
+        background-color:green;
+        grid-row: 5/6;
+        grid-column: 1/2;
+        height: 300px;
+    }
+    .child10{
+        background-color:orange;
+        grid-row: 5/6;
+        grid-column: 2/3;
+        height: 300px;
+    }
+    .child11{
+        background-color:blue;
+        grid-row: 6/7;
+        grid-column: 1/2;
+        height: 300px;
+    }
+    .child12{
+        background-color:lightgreen;
+        grid-row: 6/7;
+        grid-column: 2/3;
+        height: 300px;
+    }
+}
+</style>
+</head>
+<body>
+    <h1><a href="./gridtask.html">Home Page</a></h1>
+    <div class="parent">
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+        <div class="child4">child4</div>
+        <div class="child5">child5</div>
+        <div class="child6">child6</div>
+        <div class="child7">child7</div>
+        <div class="child8">child8</div>
+        <div class="child9">child9</div>
+        <div class="child10">child10</div>
+        <div class="child11">child11</div>
+        <div class="child12">child12</div>
+    </div>
+</body>
+</html>

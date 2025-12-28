@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selectors</title>
+    <style>
+        .parent>.og{
+            color:blue;
+        }
+        .parent h2{
+            color:brown;
+        }
+        #peddi+p{
+            color:red;
+        }
+        .child~h3{
+            color:violet;
+        }
+        .child > h2{
+            color:chartreuse;
+        }
+        .child h3,p{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1 class="og">pawan kalyan</h1>
+        <h2>chiranjeevi</h2>
+        <h1 id="peddi">ram charan</h1>
+        <p>allu arjun</p>
+        <div class="child">
+            <h2>allu arvind</h2>
+            <h3>ntr</h3>
+            <p>nagarjuna</p>
+        </div>
+        <h2>akhil</h2>
+        <p>naga chaitanya</p>
+        <h3>kalyan ram</h3>
+    </div>
+</body>
+</html>

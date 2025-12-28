@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin:0px;
+    }
+    .parent1>p{
+        display:inline-block;
+        padding-left:80px;
+    }
+    .nav>h3{
+        display: inline-block;
+    }
+    .parent1{
+        display:inline-block;
+        margin-left:1100px;
+    }
+    .nav{
+        position: fixed;
+        background: white;
+        width:100%;
+        padding:10px;
+    }
+    .parent>img{
+        position: relative;
+        z-index:-10;
+       
+    }
+    .parent>h2{
+        position: absolute;
+        top: 400px;
+        left:600px;
+        font-size: 50px;
+    }
+    .im1{
+        width: 100%;
+        z-index: -10px;
+    }
+    .im2{
+        width: 23%;
+        display: inline-block;
+        position: relative;
+        margin-top: 30px;
+    }
+    .im1>im2{
+        width: 23%;
+    }
+    .im2>img{
+        width: 100%;
+    }
+    .im2>h3{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        background:lavender;
+    }
+    .child1{
+        display: inline-block;
+        width:24%
+    }
+    .parent2>.child1{
+        width:24%
+    }
+    .parent2{
+        width:100%
+    }
+    .child1>img{
+        width:100%
+    }
+    .color>p{
+        color: gray;
+    }
+    input{
+        width:100%
+    }
+    .enti{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding:2%;
+    }
+    .i{
+        width:50%;
+    }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <h3>BR ARCHITECTURE</h3>
+        <div class="parent1">
+        <p>Projects</p>
+        <p>About</p>
+        <p>Contact</p>
+       </div>
+    </div>
+    <div class="parent">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        <h2><span style="background:aliceblue;">BR</span> Architecture</h2>
+    </div>
+    <p style="font-size: 30px;margin-top:30px;">Projects</p><hr>
+    <div class=".im1">
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Summer House</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <h3>Brick House</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <h3>Renovated</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <h3>Barn House</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <h3>Summer House</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <h3>Brick House</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <h3>Renovated</h3>
+        </div>
+        <div class="im2">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <h3>Barn House</h3>
+        </div>
+    </div>
+    <h4 style="font-size: 40px;margin-top:30px;">About</h4><hr>
+    <p style="margin-top: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="parent2">
+        <div class="child1">
+           <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+           <h4>John Doe</h4>
+           <p>CEO & Founder</p>
+           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+           <button style="background-color: gray; color:white;width:100%">Contact</button>
+        </div>
+        <div class="child1">
+           <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+           <h4>Jane Doe</h4>
+           <p>Architect</p>
+           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+           <button style="background-color: gray; color:white;width: 100%;">Contact</button>
+        </div>
+        <div class="child1">
+           <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+           <h4>Mike Ross</h4>
+           <p>Architect</p>
+           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+           <button style="background-color: gray; color:white;width:100%">Contact</button>
+        </div>
+        <div class="child1">
+           <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+           <h4>Dan Star</h4>
+           <p>Architect</p>
+           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+           <button style="background-color: gray; color:white;width: 100%;">Contact</button>
+        </div>
+    </div><br><br>
+    <h1>Contact</h1>
+    <hr>
+    <h5>Lets get in touch and talk about your next project.</h5><br><br>
+    <div>
+        <input class="i" type="text" placeholder="Name" cellpadding="50"><br><br>
+        <input class="i" type="text" placeholder="Email" cellpadding="50"><br><br>
+        <input class="i" type="text" placeholder="Subject" cellpadding="50"><br><br>
+        <input class="i" type="text" placeholder="Comment" cellpadding="50">
+    </div><br>
+    <h2><span style="background-color: black; color: white;font-size: 22px; ">SEND MESSAGE</span></h2>
+    <br>
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+    <p class="enti">Powered by <span style="text-decoration: underline;">w3.css</span></p>
+</body>
+</html>

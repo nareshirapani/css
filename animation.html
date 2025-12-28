@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .parent{
+        height:200px;
+        width:200px;
+        /* background-color: blue; */
+        border-radius:30px;
+        background-image:url("https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg");
+        animation-name:box;
+        animation-duration:4s;
+        animation-timing-function:ease-in-out;
+        animation-delay:3s;
+        animation-iteration-count:4;
+        /* animation-direction:reverse; */
+        position:absolute;
+    }
+    @keyframes box{
+        0%{
+            /* background-color:red; */
+            border-radius:50px;
+            height:250px;
+            width:250px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/273/280/small/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg");
+            
+        }
+        25%{
+            /* background-color:green; */
+            border-radius:60px;
+            height:200px;
+            width:200px;
+            left:200px;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0kr5b5sxYqLRQuDCVEoJM4yJhAsNSWK2xVg&s");
+        }
+        50%{
+            border-radius:70px;
+            height:150px;
+            width:150px;
+            left:300px;
+            background-image:url("https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg");
+        }
+        100%{
+            border-radius:80px;
+            height:100px;
+            width:100px;
+            left:300px;
+            background-image:url("https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg");
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="parent"></div>
+</body>
+</html>

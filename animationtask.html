@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
-</head>
+
 <style>
-    body{
-        background:lightblue;
+    .parent {
+        background-color: lightcyan;
+        height: 500px;
+        width: 500px;
+        margin-top: 150px;
+        margin-left: 300px;
     }
     .child1{
         background-color:orange;
@@ -15,8 +19,8 @@
         width:100px;
         border-radius:50%;
         position: relative;
-        left:500px;
-        top: 300px;
+        left:200px;
+        top: 158px;
         z-index: 2;
     }
     .child2{
@@ -28,7 +32,7 @@
         position: absolute;
         top:308px;
         left: 509px;
-        animation:eclipse 4s infinite ease-in;
+        animation:eclipse 4s infinite ease-in-out;
     }
     @keyframes eclipse {
         0%{
@@ -49,8 +53,11 @@
         }
     }
 </style>
+</head>
 <body>
+    <div class="parent">  
         <div class="child1"></div>
         <div class="child2"></div>
+    </div>
 </body>
 </html>

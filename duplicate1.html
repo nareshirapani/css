@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.places-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card */
+.place-card {
+    background: #fff;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Card content */
+.place-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.place-name {
+    font-size: 1.3rem;
+    color: #222;
+    margin: 0 0 8px;
+}
+
+.place-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.place-location {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.rating {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff9900;
+}
+</style>
+</head>
+<body>
+    <section class="places-section">
+    <h2 class="section-title">Popular Places</h2>
+
+    <div class="places-container">
+        <!-- Place Card -->
+        <div class="place-card">
+            <img src="https://picsum.photos/400/250?random=1" alt="Place Image">
+            <div class="place-info">
+                <h3 class="place-name">Coffee Shop</h3>
+                <p class="place-desc">Cozy place for coffee, tea & snacks.</p>
+                <span class="place-location">City Center</span>
+                <div class="rating">⭐ 4.6</div>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://picsum.photos/400/250?random=2" alt="Place Image">
+            <div class="place-info">
+                <h3 class="place-name">Italian Restaurant</h3>
+                <p class="place-desc">Authentic Italian cuisine & wine.</p>
+                <span class="place-location">Main Street</span>
+                <div class="rating">⭐ 4.8</div>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://picsum.photos/400/250?random=3" alt="Place Image">
+            <div class="place-info">
+                <h3 class="place-name">Art Gallery</h3>
+                <p class="place-desc">Modern art exhibitions & events.</p>
+                <span class="place-location">River Bay</span>
+                <div class="rating">⭐ 4.4</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</body>
+</html>

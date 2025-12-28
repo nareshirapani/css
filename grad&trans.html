@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .parent{
+        margin:150px;
+        height:450px;
+        width:450px;
+        background-image: repeating-conic-gradient(red 25deg,yellow 30deg,blue 45deg);
+        border-radius: 50%;
+        animation:circle 2s infinite ease-in-out reverse;
+        position: absolute;
+        z-index: 1;
+    }
+    .child{
+        margin-top:100px;
+        margin-left: 310px;
+        height:600px;
+        width:700px;
+        background-image: repeating-radial-gradient(red 20%,orange 30%);
+        border-radius: 50%;
+        animation:rotate 2s infinite ease-in-out alternate;
+        z-index:-1;
+    }
+    .sub{
+        margin-top: 290px;
+        margin-left: 300px;
+        font-size: 3rem;
+        position: absolute;
+        color:white;
+        animation:text 2s infinite ease-in-out alternate-reverse;
+        z-index: 2;
+    }
+    @keyframes rotate{
+        0%{
+            top:0;
+            left:300px;
+            transform: rotate(180deg);
+        }
+        100%{
+            top:30px;
+            left:300px;
+        }
+    }
+    @keyframes circle{
+        0%{
+            top:0;
+            left:300px;
+            transform: rotate(360deg);
+        }
+        100%{
+            top:30px;
+            left:300px;
+        }
+    }
+    @keyframes text{
+        0%{
+            top:0;
+            left:300px;
+            transform: rotate(360deg);
+        }
+        100%{
+            top:30px;
+            left:300px;
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <div class="parent"></div>
+    <div class="child"></div>
+    <div class="sub"><p>Naresh</p></div>
+</body>
+</html>
